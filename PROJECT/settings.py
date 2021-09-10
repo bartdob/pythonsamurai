@@ -27,7 +27,8 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'b3#lfctt@7&jo!aii&q2&ibov39fq4-ub@9%-ynzq_u79vtbj-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG_VALUE') # ios
+#DEBUG = os.environ.get('DEBUG_VALUE') # ios
+DEBUG = True
 print('debug val: ', DEBUG)
 
 ALLOWED_HOSTS = ['192.168.2.108',

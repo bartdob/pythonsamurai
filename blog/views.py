@@ -5,11 +5,17 @@ from .models import Post
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 
+
 def home(request):
     context = {
         'posts': Post.objects.all()
     }
     return render(request, 'index.html', context)
+
+
+def about(request):
+    return render(request, 'about.html')
+
 
 class PostListView(ListView):
     model = Post
